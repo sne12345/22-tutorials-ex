@@ -1,4 +1,4 @@
-안드로이드 위한 모델 준비 레시피
+안드로이드를 위한 모델 준비 레시피
 =====================================
 
 이 레시피는 안드로이드 앱용 파이토치 MobileNet v2 이미지 분류 모델을 준비하는 방법과 모바일 지원 가능한 모델 파일을 사용할 수 있도록 안드로이드 프로젝트를 설정하는 방법에 대해 설명합니다.
@@ -64,7 +64,7 @@ trace 메서드는 추적 중에 실행되는 코드 경로만 스크립팅하�
     
 위의 두 단계에서 총 7줄 또는 8줄의 코드(모델의 TorchScript 형식을 가져오기 위해 'script' 또는 'trace' 메서드가 호출되는지에 따라)로, 우리는 모바일 앱에 추가할 수 있는 모델을 준비했습니다.
 
-3. Android에서 모델 및 PyTorch 라이브러리 추가
+3. 안드로이드에서 모델 및 PyTorch 라이브러리 추가
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * 현재 또는 새 Android Studio 프로젝트에서 build.gradle 파일을 열고 다음 두 줄을 추가합니다(두 번째 줄은 TorchVision 모델을 사용하려는 경우에만 필요합니다).
@@ -76,7 +76,7 @@ trace 메서드는 추적 중에 실행되는 코드 경로만 스크립팅하�
 
 * 모델 파일 'mobilenetv2_quantized.pt'를 프로젝트의 자산 폴더로 드래그 앤 드롭합니다.
 
-끝났습니다! 이제 PyTorch 라이브러리와 준비된 모델로 Android 앱을 만들 수 있습니다. 실제로 모델을 사용하기 위한 코드를 작성하려면 PyTorch Mobile `안드로이드 퀵스타트 with HelloWorld 예제 <https://pytorch.org/mobile/android/#quickstart-with-a-helloworld-example>`_ 와 `안드로이드 해커톤 예제 <https://github.com/pytorch/workshops/tree/master/PTMobileWalkthruAndroid>`_ 를 참조하십시오.
+끝났습니다! 이제 PyTorch 라이브러리와 준비된 모델로 안드로이드 앱을 만들 수 있습니다. 실제로 모델을 사용하기 위한 코드를 작성하려면 PyTorch Mobile `안드로이드 퀵스타트 with HelloWorld 예제 <https://pytorch.org/mobile/android/#quickstart-with-a-helloworld-example>`_ 와 `안드로이드 해커톤 예제 <https://github.com/pytorch/workshops/tree/master/PTMobileWalkthruAndroid>`_ 를 참조하십시오.
 
 더 알아보기
 -----------------
